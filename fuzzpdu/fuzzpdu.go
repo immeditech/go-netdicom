@@ -6,8 +6,8 @@ import (
 	"flag"
 
 	"github.com/grailbio/go-dicom/dicomio"
-	"github.com/grailbio/go-netdicom/dimse"
-	"github.com/grailbio/go-netdicom/pdu"
+	"github.com/immeditech/go-netdicom/dimse"
+	"github.com/immeditech/go-netdicom/pdu"
 )
 
 func init() {

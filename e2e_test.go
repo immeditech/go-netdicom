@@ -20,8 +20,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grailbio/go-netdicom/dimse"
-	"github.com/grailbio/go-netdicom/sopclass"
+	"github.com/immeditech/go-netdicom/dimse"
+	"github.com/immeditech/go-netdicom/sopclass"
 )
 
 var provider *ServiceProvider

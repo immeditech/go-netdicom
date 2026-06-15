@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/grailbio/go-netdicom"
-	"github.com/grailbio/go-netdicom/sopclass"
+	"github.com/immeditech/go-netdicom"
+	"github.com/immeditech/go-netdicom/sopclass"
 	"github.com/stretchr/testify/require"
 )
 

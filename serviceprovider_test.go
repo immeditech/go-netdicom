@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/grailbio/go-dicom/dicomlog"
-	"github.com/grailbio/go-netdicom/dimse"
-	"github.com/grailbio/go-netdicom/sopclass"
+	"github.com/immeditech/go-netdicom/dimse"
+	"github.com/immeditech/go-netdicom/sopclass"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

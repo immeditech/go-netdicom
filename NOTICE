@@ -1,0 +1,19 @@
+go-netdicom
+Copyright 2025 Immeditech GmbH
+
+This product is a fork and includes software developed by third parties,
+distributed under the Apache License, Version 2.0:
+
+  - grailbio/go-netdicom — original implementation
+    Copyright 2017 GRAIL, Inc.
+    https://github.com/grailbio/go-netdicom
+
+  - segmed/go-netdicom — maintained fork this fork is based on
+    https://github.com/segmed/go-netdicom
+
+The DICOM data model is provided by github.com/grailbio/go-dicom, used via
+the maintained fork github.com/segmed/go-dicom (Apache-2.0).
+
+Modifications by Immeditech GmbH are likewise licensed under the
+Apache License, Version 2.0 (see LICENSE). See README.md for a summary
+of the changes made in this fork.

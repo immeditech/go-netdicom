@@ -28,8 +28,8 @@ import (
 	"github.com/grailbio/go-dicom/dicomlog"
 	"github.com/grailbio/go-dicom/dicomtag"
 	"github.com/grailbio/go-dicom/dicomuid"
-	"github.com/grailbio/go-netdicom"
-	"github.com/grailbio/go-netdicom/dimse"
+	"github.com/immeditech/go-netdicom"
+	"github.com/immeditech/go-netdicom/dimse"
 )
 
 var (

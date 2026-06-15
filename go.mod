@@ -1,4 +1,4 @@
-module github.com/grailbio/go-netdicom
+module github.com/immeditech/go-netdicom
 
 go 1.24
 
