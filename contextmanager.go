@@ -59,21 +59,27 @@ func newContextManager(label string) *contextManager {
 	return c
 }
 
-// Pick the first matching transfer syntax UID appeares in allTransferSyntaxes
-// - If one of the client proposed transfer syntaxes matches the server's preferred transfer syntax, then that transfer syntax is accepted.
-// - If the client does not propose a transfer syntax that matches the server's preferred transfer syntax, the first transfer syntax in the client's list of proposed syntaxes is accepted.
-// - If none of the proposed transfer syntaxes are supported, just pick the first preferred transfer syntax:
-//   Implicit VR Little Endian Transfer Syntax (UID = "1.2.840.10008.1.2 "),
-//   which shall be supported by every conformant DICOM Implementation.
+// pickFirstPreferedTransferSyntax selects the transfer syntax to accept for a
+// presentation context, honoring the requester's proposed order:
+//   - The first proposed transfer syntax that this server supports is accepted.
+//     A Storage SCU lists the syntax it prefers to send first (e.g. an object's
+//     own compressed JPEG/MPEG syntax), and the SCP must accept that — forcing
+//     the server's own preference would require the SCU to transcode, which is
+//     impossible for already-compressed pixel data.
+//   - If none of the proposed syntaxes are supported, fall back to Implicit VR
+//     Little Endian ("1.2.840.10008.1.2"), mandatory for every conformant
+//     DICOM implementation.
 func pickFirstPreferedTransferSyntax(proposedTransferSyntaxUIDs []string) string {
+	supported := make(map[string]bool, len(allTransferSyntaxes))
 	for _, syntaxUID := range allTransferSyntaxes {
-		for _, proposed := range proposedTransferSyntaxUIDs {
-			if syntaxUID == proposed {
-				return syntaxUID
-			}
+		supported[syntaxUID] = true
+	}
+	for _, proposed := range proposedTransferSyntaxUIDs {
+		if supported[proposed] {
+			return proposed
 		}
 	}
-	return allTransferSyntaxes[0]
+	return "1.2.840.10008.1.2"
 }
 
 // Called by the user (client) to produce a list to be embedded in an
