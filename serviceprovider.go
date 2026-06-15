@@ -10,9 +10,9 @@ import (
 	"net"
 	"time"
 
-	dicom "github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomio"
-	"github.com/grailbio/go-dicom/dicomlog"
+	dicom "github.com/immeditech/go-dicom"
+	"github.com/immeditech/go-dicom/dicomio"
+	"github.com/immeditech/go-dicom/dicomlog"
 
 	"github.com/immeditech/go-netdicom/dimse"
 	"github.com/immeditech/go-netdicom/sopclass"

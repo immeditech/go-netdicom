@@ -3,7 +3,7 @@ module github.com/immeditech/go-netdicom
 go 1.24
 
 require (
-	github.com/grailbio/go-dicom v0.0.0-20211105193521-b0e216a1c5cd
+	github.com/immeditech/go-dicom v0.0.0-20260615170320-510cd06832ff
 	github.com/stretchr/testify v1.10.0
 )
 
@@ -14,5 +14,3 @@ require (
 	golang.org/x/text v0.26.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/grailbio/go-dicom => github.com/segmed/go-dicom v0.0.0-20250711000626-330cfb7d1609

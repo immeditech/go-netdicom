@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/grailbio/go-dicom/dicomlog"
+	"github.com/immeditech/go-dicom/dicomlog"
 	"github.com/immeditech/go-netdicom/dimse"
 )
 

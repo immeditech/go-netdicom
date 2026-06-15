@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/grailbio/go-dicom/dicomlog"
+	"github.com/immeditech/go-dicom/dicomlog"
 	"github.com/immeditech/go-netdicom/dimse"
 	"github.com/immeditech/go-netdicom/sopclass"
 	"github.com/stretchr/testify/assert"

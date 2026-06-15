@@ -5,9 +5,9 @@ import (
 	"flag"
 	"log"
 
-	"github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomlog"
-	"github.com/grailbio/go-dicom/dicomtag"
+	"github.com/immeditech/go-dicom"
+	"github.com/immeditech/go-dicom/dicomlog"
+	"github.com/immeditech/go-dicom/dicomtag"
 
 	"github.com/immeditech/go-netdicom"
 	"github.com/immeditech/go-netdicom/dimse"

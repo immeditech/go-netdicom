@@ -3,9 +3,9 @@ package netdicom
 import (
 	"fmt"
 
-	"github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomlog"
-	"github.com/grailbio/go-dicom/dicomuid"
+	"github.com/immeditech/go-dicom"
+	"github.com/immeditech/go-dicom/dicomlog"
+	"github.com/immeditech/go-dicom/dicomuid"
 	"github.com/immeditech/go-netdicom/pdu"
 )
 

@@ -7,8 +7,8 @@ import (
 	"sync"
 	"testing"
 
-	godicom "github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomtag"
+	godicom "github.com/immeditech/go-dicom"
+	"github.com/immeditech/go-dicom/dicomtag"
 	"github.com/immeditech/go-netdicom"
 	"github.com/immeditech/go-netdicom/dimse"
 	"github.com/immeditech/go-netdicom/sopclass"

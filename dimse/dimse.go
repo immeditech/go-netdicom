@@ -12,10 +12,10 @@ import (
 	"fmt"
 	"sort"
 
-	dicom "github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomio"
-	"github.com/grailbio/go-dicom/dicomlog"
-	"github.com/grailbio/go-dicom/dicomtag"
+	dicom "github.com/immeditech/go-dicom"
+	"github.com/immeditech/go-dicom/dicomio"
+	"github.com/immeditech/go-dicom/dicomlog"
+	"github.com/immeditech/go-dicom/dicomtag"
 
 	"github.com/immeditech/go-netdicom/pdu"
 )
